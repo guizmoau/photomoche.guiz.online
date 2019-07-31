@@ -269,15 +269,15 @@ MOCHE.events = new Events, MOCHE.noise = new ImprovedNoise, MOCHE.Main = functio
         a = Math.floor(50);
 
     function s() {
-        n = "jpg", $("#opt-jpg").addClass("selected"), $("#opt-gif").removeClass("selected"), $("#opt-webm").removeClass("selected"), $("#btn-record").text("Save"), $("#btn-record").removeClass("vid-mode"), MOCHE.Main.onResize()
+        n = "jpg", $("#opt-jpg").addClass("selected"), $("#opt-gif").removeClass("selected"), $("#opt-webm").removeClass("selected"), $("#btn-record").text("Sauvegarder"), $("#btn-record").removeClass("vid-mode"), MOCHE.Main.onResize()
     }
 
     function l() {
-        n = "gif", $("#opt-jpg").removeClass("selected"), $("#opt-gif").addClass("selected"), $("#opt-webm").removeClass("selected"), $("#btn-record").text("Record"), $("#btn-record").addClass("vid-mode"), MOCHE.Main.onResize()
+        n = "gif", $("#opt-jpg").removeClass("selected"), $("#opt-gif").addClass("selected"), $("#opt-webm").removeClass("selected"), $("#btn-record").text("Enregistrer"), $("#btn-record").addClass("vid-mode"), MOCHE.Main.onResize()
     }
 
     function v() {
-        n = "webm", $("#opt-jpg").removeClass("selected"), $("#opt-gif").removeClass("selected"), $("#opt-webm").addClass("selected"), $("#btn-record").text("Record"), $("#btn-record").addClass("vid-mode"), MOCHE.Main.onResize()
+        n = "webm", $("#opt-jpg").removeClass("selected"), $("#opt-gif").removeClass("selected"), $("#opt-webm").addClass("selected"), $("#btn-record").text("Enregistrer"), $("#btn-record").addClass("vid-mode"), MOCHE.Main.onResize()
     }
 
     function u() {
@@ -353,7 +353,7 @@ MOCHE.events = new Events, MOCHE.noise = new ImprovedNoise, MOCHE.Main = functio
     function m() {
         TweenMax.killTweensOf("#btn-record"), TweenMax.set("#btn-record", {
             backgroundColor: "rgba(255,255,255,0.15)"
-        }), $("#btn-record").on("click", u), $("#btn-record").css("cursor", "pointer"), $("#btn-record").toggleClass("recording"), $("#btn-record").text("Record")
+        }), $("#btn-record").on("click", u), $("#btn-record").css("cursor", "pointer"), $("#btn-record").toggleClass("recording"), $("#btn-record").text("Enregistrer")
     }
 
     function p() {
