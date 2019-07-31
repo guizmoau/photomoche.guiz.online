@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Photo Moche</title>
+    <meta
+      name="description"
+      content="Retouche de photos avec effet moche, vidéo ou camera avec effets WebGL. Sauvegarder comme image, gif ou video."
+    />
+    <meta name="author" content="Guillaume Bouzige" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <a href="."><div id="top-logo-holder"></div></a>
+    <div id="drop-target-holder">
+      <div id="drop-target" class="option dashed v-centered h-centered">
+        Déposez votre fichier ici.
+      </div>
+    </div>
+
+    <div id="viz">
+      <div id="save-options">
+        <div id="opt-jpg" class="save-opt-inner selected">JPG</div>
+        <div id="opt-gif" class="save-opt-inner">GIF</div>
+        <div id="opt-webm" class="save-opt-inner">WEBM</div>
+      </div>
+
+      <div id="webgl">
+        <div id="progress-bar"></div>
+        <div id="progress-bar-bkgnd"></div>
+      </div>
+
+      <div id="bottom-controls-holder">
+        <div class="option clickable icon-btn" id="btn-record">Sauvegarder</div>
+      </div>
+    </div>
+
+    <div id="intro">
+      <div id="intro-logo" class="logo h-centered"></div>
+      <div id="sub-head" class="big">Une photo moche ?</div>
+      <div id="options-holder">
+        <div id="input-options" class="v-centered">
+          <div class="option clickable" id="option-file">
+            Charger un fichier
+          </div>
+          <div class="middle-sep">OU</div>
+          <div class="option clickable" id="option-cam">
+            Utiliser votre camera
+          </div>
+        </div>
+
+        <div id="cam-prompt" class="v-centered big">
+          Merci d'autoriser l'accès à votre camera.
+        </div>
+
+        <div id="file-prompt" class="v-centered">
+          <div class="option clickable" id="option-choose">
+            Choisissez votre fichier...
+          </div>
+          <div class="middle-sep">OR</div>
+          <div class="option dashed">
+            Déposez votre fichier ici.
+          </div>
+          <input type="file" id="file1" style="display:none" />
+        </div>
+      </div>
+
+      <p><br/>by <a href="http://guillaumebouzige.com">Guiz</a></p>
+
+      <div class="hello">
+        <a href="https://instagram.com/guillaumebouzige/" target="_blank"><span id="insta" class="social-icon"></span></a>
+        <a href="https://twitter.com/guillaumebouzige" target="_blank"><span id="twitter" class="social-icon"></span></a>
+        <a href="mailto:guillaume@bouzige.com"><span id="mail" class="social-icon"></span></a>
+      </div>
+    </div>
+
+    <div id="controls-holder">
+      <div id="controls-header">
+           Options d'effets
+      </div>
+      <div id="controls">
+        <div id="settings"></div>
+      </div>
+    </div>
+
+    <script src="js/lib.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
