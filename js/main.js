@@ -61,9 +61,10 @@ MOCHE.events = new Events, MOCHE.noise = new ImprovedNoise, MOCHE.Main = functio
                 }()) return $("#input-options").css("display", "none"), $("#file-prompt").css("display", "none"), TweenMax.to($("#cam-prompt"), .6, {
                 autoAlpha: 1
             }), void $("#cam-prompt").html("This browser or device does not support WebGL. Please try with latest Chrome.");
-            $("#btn-mosh").on("click", MOCHE.FX.randomizeFilters), document.onselectstart = function() {
+            
+            document.onselectstart = function() {
                 return !1
-            }, (l = new THREE.PerspectiveCamera(75, 1.5, 1, 3e3)).position.z = 65, n = new THREE.Scene, i = new THREE.MeshBasicMaterial;
+            }, (l = new THREE.PerspectiveCamera(75, 1.5, 1, 3e3)).position.z = 65,n = new THREE.Scene, i = new THREE.MeshBasicMaterial;           
             var e = new THREE.PlaneBufferGeometry(100, 100, 1, 1);
             u = new THREE.Mesh(e, i), n.add(u), s = new Stats, o && document.body.append(s.domElement), s.domElement.id = "stats", v = new THREE.WebGLRenderer({
                 preserveDrawingBuffer: !0
@@ -182,7 +183,7 @@ MOCHE.events = new Events, MOCHE.noise = new ImprovedNoise, MOCHE.Main = functio
             autoAlpha: 1
         }), $("#option-choose").on("click", function() {
             $("#file1").click()
-        }), $("#sub-head").html("Select an image or short MP4 video."))
+        }), $("#sub-head").html("Choisissez un image ou une petite video en mp4."))
     }
 
     function t() {
@@ -204,7 +205,7 @@ MOCHE.events = new Events, MOCHE.noise = new ImprovedNoise, MOCHE.Main = functio
             }(t.result)
         };
         else {
-            if (!o.match(/video\/\w+/)) return void console.alert("Only image and video files supported.");
+            if (!o.match(/video\/\w+/)) return void console.alert("Seul les fichiers images et videos sont supportés !");
             t.onload = function() {
                 ! function(e) {
                     n = !1, i.onloadedmetadata = u, i.src = e, i.load()

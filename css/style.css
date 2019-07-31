@@ -228,10 +228,6 @@ a{
 	background-size: 100% 100%;
 }
 
-#btn-mosh:before{
-   /*background: url(../res/img/mosh.png) no-repeat left center transparent;*/
-}
-
 #btn-help:before{
    /*background: url(../res/img/help.png) no-repeat left center transparent;*/
 }
